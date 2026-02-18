@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm placing blocks and....</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="configuration_container">
+        <label for="rows">Sorok száma: </label>
+        <input type="number" name="rows" id="rows" value="8">
+
+        <label for="columns">Oszlopok száma: </label>
+        <input type="number" name="columns" id="columns" value="5">
+
+        <br>
+        <input type="checkbox" name="collapse" id="collapse" value="true">
+        <label for="collapse"> cellák összezárása</label>
+
+        <input type="checkbox" id="kiemeles">
+        <label for="kiemeles"> Sor/Oszlop kiemelés</label>
+
+        <br>
+        <label for="border_width">Keret vastagsága</label>
+        <input type="range" name="border_width" id="border_width" value="4" min="1" max="20" onchange="RefreshPX()">
+        <label id="px">4 px</label>
+
+        <br>
+        <button onclick="AddTable()">Felvesz</button>
+        <button onclick="Torles()">Törlés</button>
+
+    </div>
+    <div id="container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
