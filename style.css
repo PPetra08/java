@@ -1,0 +1,112 @@
+body {
+    
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+#configuration_container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 600;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 120px;
+}
+
+input[type="number"], input[type="range"] {
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60px;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+
+button[onclick="AddTable()"] {
+    background-color: #1b7381;
+    color: white;
+}
+
+button[onclick="AddTable()"]:hover {
+    background-color: #3b3b3b;
+}
+
+
+button[onclick="Torles()"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+button[onclick="Torles()"]:hover {
+    background-color: #5a6268;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+th {
+    padding: 12px;
+    text-align: center;
+    background-color: #e9ecef; 
+    color: #495057;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #eee;
+    margin: 30px 0;
+}
+
+
+table {
+    margin-top: 15px;
+}
+
+td {
+    padding: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+th {
+    padding: 8px;
+    background-color: #1b7381; 
+    color: white;
+    font-weight: bold;
+}
